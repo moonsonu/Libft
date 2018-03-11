@@ -6,7 +6,7 @@
 /*   By: ksonu <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/05 02:23:31 by ksonu             #+#    #+#             */
-/*   Updated: 2018/03/07 14:36:02 by ksonu            ###   ########.fr       */
+/*   Updated: 2018/03/10 15:43:31 by ksonu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,10 +26,10 @@ t_list		*ft_lstnew(void const *content, size_t content_size)
 	}
 	else
 	{
-		new->content = malloc(sizeof(content));
+		new->content = malloc(content_size);
 		if (new->content == NULL)
 			return (NULL);
-		ft_memcpy((new->content), content, sizeof(content));
+		ft_memcpy((new->content), content, content_size);
 		new->content_size = content_size;
 	}
 	new->next = NULL;

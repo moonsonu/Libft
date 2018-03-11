@@ -6,7 +6,7 @@
 #    By: ksonu <marvin@42.fr>                       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/03/05 01:26:55 by ksonu             #+#    #+#              #
-#    Updated: 2018/03/07 14:41:34 by ksonu            ###   ########.fr        #
+#    Updated: 2018/03/10 17:37:38 by ksonu            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -72,7 +72,10 @@ SRC =	ft_memset.c		\
 		ft_lstiter.c	\
 		ft_lstmap.c		\
 		ft_counter.c	\
-		ft_string.c		
+		ft_string.c		\
+		ft_itoa_len.c	\
+		ft_whtspace.c	\
+		ft_swap.c		\
 
 OBJ = $(SRC:.c=.o)
 
@@ -81,9 +84,9 @@ HEADER = libft.h
 all: $(NAME)
 
 $(NAME):
-	@$(CC) $(CFLAGS) -c -I $(HEADER) $(SRC)
-	@ar rc $(NAME) $(OBJ)
-	@ranlib $(NAME)
+	$(CC) $(CFLAGS) -c -I $(HEADER) $(SRC)
+	ar rc $(NAME) $(OBJ)
+	ranlib $(NAME)
 
 clean:
 	rm -rf $(OBJ)

@@ -6,29 +6,11 @@
 /*   By: ksonu <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/28 22:50:25 by ksonu             #+#    #+#             */
-/*   Updated: 2018/03/05 00:49:44 by ksonu            ###   ########.fr       */
+/*   Updated: 2018/03/10 17:48:33 by ksonu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-static int		itoa_len(int n)
-{
-	int		len;
-	int		negative;
-
-	len = 1;
-	negative = 0;
-	if (n < 0)
-	{
-		n *= -1;
-		negative = 1;
-	}
-	len += negative;
-	while (n /= 10)
-		len++;
-	return (len);
-}
 
 char			*ft_itoa(int n)
 {
@@ -36,9 +18,12 @@ char			*ft_itoa(int n)
 	int		len;
 	int		c;
 
+	if (n == -2147483648)
+		return (ft_strdup("-2147483648"));
 	c = n;
-	len = itoa_len(n);
-	rc = (char *)malloc(sizeof(char) * len);
+	len = ft_itoa_len(n);
+	if (!(rc = (char *)malloc(sizeof(char) * (len + 1))))
+		return (NULL);
 	rc[len] = '\0';
 	if (n < 0)
 		n *= -1;

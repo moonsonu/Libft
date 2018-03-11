@@ -6,7 +6,7 @@
 /*   By: ksonu <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/19 17:30:16 by ksonu             #+#    #+#             */
-/*   Updated: 2018/03/06 22:50:36 by ksonu            ###   ########.fr       */
+/*   Updated: 2018/03/10 17:45:23 by ksonu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,10 @@ char	*ft_strncpy(char *dst, const char *src, size_t len)
 		dst[i] = s[i];
 		i++;
 	}
-	dst[i] = '\0';
+	while (i < len)
+	{
+		dst[i] = '\0';
+		i++;
+	}
 	return (dst);
 }
