@@ -6,7 +6,7 @@
 #    By: ksonu <marvin@42.fr>                       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/03/05 01:26:55 by ksonu             #+#    #+#              #
-#    Updated: 2018/03/10 17:37:38 by ksonu            ###   ########.fr        #
+#    Updated: 2018/04/04 00:41:24 by ksonu            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -84,7 +84,7 @@ HEADER = libft.h
 all: $(NAME)
 
 $(NAME):
-	$(CC) $(CFLAGS) -c -I $(HEADER) $(SRC)
+	$(CC) $(CFLAGS) -c -I includes $(SRC)
 	ar rc $(NAME) $(OBJ)
 	ranlib $(NAME)
 
