@@ -6,7 +6,7 @@
 /*   By: ksonu <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/01 01:10:49 by ksonu             #+#    #+#             */
-/*   Updated: 2018/03/16 17:08:42 by ksonu            ###   ########.fr       */
+/*   Updated: 2018/04/18 19:31:23 by ksonu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,4 +90,7 @@ char				*ft_string(char const *s, char c);
 int					ft_itoa_len(int n);
 int					ft_whtspace(const char *str, int i);
 void				ft_swap(int *a, int *b);
+void				ft_splitdel(char **split);
+int					ft_wdcount(char *str, char c);
+int					get_next_line(const int fd, char **line);
 #endif
