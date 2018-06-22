@@ -6,7 +6,7 @@
 #    By: ksonu <marvin@42.fr>                       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/03/05 01:26:55 by ksonu             #+#    #+#              #
-#    Updated: 2018/06/21 16:31:35 by ksonu            ###   ########.fr        #
+#    Updated: 2018/06/21 17:46:09 by ksonu            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -83,7 +83,8 @@ SRC =	ft_memset.c		\
 		ft_rgb.c		\
 		ft_itoa_base.c	\
 		ft_ltoa.c		\
-		ft_ltoa_base.c
+		ft_ltoa_base.c	\
+		ft_strlower.c
 OBJ = $(SRC:.c=.o)
 
 HEADER = libft.h
