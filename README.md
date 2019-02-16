@@ -36,12 +36,11 @@ Part 2:
 
 |     | Function | Description |
 | --- | -------- | ----------- |
-| ✓ | ft_memalloc | Allocates (with malloc(3)) and returns a “fresh” memory area.The memory allocated is initialized to 0. If the allocation fails, the function returns NULL. |
-| [X] | ft_memdel | Takes as a parameter the address of a memory area that needs to be freed with free(3), then puts the pointer to NULL. |
-| [X] | ft_strnew | Allocates (with malloc(3)) and returns a “fresh” string ending with ’\0’. Each character of the string is initialized at ’\0’. If the allocation fails the function returns NULL. |
+| [✓] | ft_memalloc | Allocates (with malloc(3)) and returns a “fresh” memory area.The memory allocated is initialized to 0. If the allocation fails, the function returns NULL. |
+| [✓] | ft_memdel | Takes as a parameter the address of a memory area that needs to be freed with free(3), then puts the pointer to NULL. |
+| [✓] | ft_strnew | Allocates (with malloc(3)) and returns a “fresh” string ending with ’\0’. Each character of the string is initialized at ’\0’. If the allocation fails the function returns NULL. |
+| [X] | ft_strdel | Takes as a parameter the address of a string that need to be freed with free(3), then sets its pointer to NULL. |
 
-- [X] ft_strdel : Takes as a parameter the address of a string that need to be freed with free(3),
-                  then sets its pointer to NULL.
 - [X] ft_strclr : Sets every character of the string to the value ’\0’.
 - [X] ft_striter : Applies the function f to each character of the string passed as argument.
                    Each character is passed by address to f to be modified if necessary
