@@ -33,9 +33,8 @@ Part 1 :
 - [X] tolower
 
 Part 2:
-|    |Function|Description|
-|----|--------|-----------|
-|[X] |ft_memalloc|Allocates (with malloc(3)) and returns a “fresh” memory area.|
+
+|[X]|ft_memalloc|Allocates (with malloc(3)) and returns a “fresh” memory area.|
 
 
                     The memory allocated is initialized to 0. If the allocation fails, the function returns NULL.
