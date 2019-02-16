@@ -33,7 +33,11 @@ Part 1 :
 - [X] tolower
 
 Part 2:
-- [X] ft_memalloc : Allocates (with malloc(3)) and returns a “fresh” memory area.
+|    |Function|Description|
+|----|--------|-----------|
+|[X] |ft_memalloc|Allocates (with malloc(3)) and returns a “fresh” memory area.|
+
+
                     The memory allocated is initialized to 0. If the allocation fails, the function returns NULL.
 - [X] ft_memdel : Takes as a parameter the address of a memory area that needs to be freed with free(3),
                   then puts the pointer to NULL.
